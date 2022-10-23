@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 
 /**
  * Created by Hesham Ouda 23/10/2022
@@ -20,6 +21,9 @@ public class Author {
 
     private String firstName;
     private String lastName;
+
+    // books properity Manay to Many
+    @ManyToMany(mappedBy = "authors")
     private Set<Book> books;
 
     public Author() {
