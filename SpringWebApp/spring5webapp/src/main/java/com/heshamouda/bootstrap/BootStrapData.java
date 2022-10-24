@@ -1,4 +1,4 @@
-package bootstrap;
+package com.heshamouda.bootstrap;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -25,6 +25,7 @@ public class BootStrapData implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
+        System.out.println("Started in Bootstrap");
 
         Author eric = new Author("Eric", "Evans");
         Book ddd = new Book("Domain Drive Design", "12345");
