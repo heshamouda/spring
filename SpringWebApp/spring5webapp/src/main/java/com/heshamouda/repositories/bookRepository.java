@@ -8,6 +8,6 @@ import com.heshamouda.domain.Book;
  * at 24.10.2022
  */
 
-public interface bookRepository extends CrudRepository<Book, Long> {
+public interface BookRepository extends CrudRepository<Book, Long> {
 
 }
